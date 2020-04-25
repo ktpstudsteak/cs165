@@ -1,22 +1,57 @@
 #include <iostream>
 using namespace std;
 
+int getSize();
+int getList(int[], int);
+
 //Show "Hello World" on screen
 int main() 
 {
-    char fName[256];
-    int age;
-
-    cout << "Hello CS 165 World\n";
     
-    cout << "What is your first name?: ";
-    cin  >> fName;
-    cout << endl;
+    /*                                                               ____________     
+    *                                                              <     Y3ET     >
+    *                                                              <  ___________ > 
+    *                                                                     '
+    * Create size and array within main because I can't use pointers yet. \\0              :)
+    *                                                                       |
+    *                                                                      / \
+    */                                                                     
 
-    cout << "What is your age?: ";
-    cin  >> age;
-    cout << endl;
+    int size = getSize();
+    int list[size] = {};  
+
+
+}
+
+int getSize()
+{
+    int size = 0;
+    cout << "Enter the size of the list: ";
+    cin  >> size;
+
+    return size;
+}
+
+int getList(int list[], int size)
+{
+    for (int i = 0; i < size; i++)
+    {
+        cout << "Enter number for index " << i;
+        cin  >> list[i];
+        cout << endl;       
+    }   
+}
+
+void displayMultiples(int list[], int size)
+{
+    cout << "The following are divisible by 3:\n";
+    for (int i = 0; i < size; i++)
+    {
+        if ((list[i] % 3) == 0)
+        {
+            
+        }
+        
+    }
     
-    cout << "Your name is " << fName << ". You are " << age << " years old.\n";
-
 }
