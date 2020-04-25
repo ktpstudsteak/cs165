@@ -3,6 +3,8 @@ using namespace std;
 
 int getSize();
 int getList(int[], int);
+void displayMultiples(int[], int);
+
 
 //Show "Hello World" on screen
 int main() 
@@ -20,6 +22,8 @@ int main()
     int size = getSize();
     int list[size] = {};  
 
+    getList(list, size);
+    displayMultiples(list, size);
 
 }
 
@@ -36,10 +40,10 @@ int getList(int list[], int size)
 {
     for (int i = 0; i < size; i++)
     {
-        cout << "Enter number for index " << i;
-        cin  >> list[i];
-        cout << endl;       
+        cout << "Enter number for index " << i << ": ";
+        cin  >> list[i];      
     }   
+    cout << endl;
 }
 
 void displayMultiples(int list[], int size)
@@ -49,7 +53,7 @@ void displayMultiples(int list[], int size)
     {
         if ((list[i] % 3) == 0)
         {
-            
+            cout << list[i] << endl;
         }
         
     }
