@@ -28,23 +28,6 @@ struct User
     int    idNum;
 };
 
-void prompt(User & user);
-void display(const User & user);
-
-/**********************************************************************
- * MAIN
- * Put everything together
- ***********************************************************************/
-int main()
-{
-    User user;
-
-    prompt(user);
-    display(user);
-   
-   return 0;
-}
-
 /**********************************************************************
  * PROMPT
  * Prompt user for information
@@ -68,5 +51,22 @@ void display(const User & user)
          << user.idNum
          << " - "
          << user.fName
-         << user.lName;
+         << " "
+         << user.lName
+         << endl;
 }
+
+/**********************************************************************
+ * MAIN
+ * Put everything together
+ ***********************************************************************/
+int main()
+{
+    User user;
+
+    prompt(user);
+    display(user);
+   
+   return 0;
+}
+
