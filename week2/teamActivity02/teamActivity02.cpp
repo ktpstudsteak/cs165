@@ -20,8 +20,26 @@ void displayScipture(Scripture & scrip)
          << " "
          << scrip.chapter
          << ":"
-         << scrip.verse;
+         << scrip.verse
+         << endl;
 }
+
+Scripture promptScripture()
+{
+    Scripture scrip;
+
+    cout << "What Book is it in: ";
+    cin >> scrip.bookName;
+
+    cout << "Chapter: ";
+    cin >> scrip.chapter;
+
+    cout << "Verse: ";
+    cin >> scrip.verse;
+
+    return scrip;
+}
+
 
 int main()
 {
@@ -31,5 +49,14 @@ int main()
     scrip.verse    = 5;
 
     displayScipture(scrip);
+
+    cout << endl;
+
+    Scripture s2 = promptScripture();
+
+    cout << endl;
+
+    displayScipture(s2);
+
     return 0;
 }
