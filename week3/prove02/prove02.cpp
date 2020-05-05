@@ -1,6 +1,6 @@
 /***********************************************************************
 * Program:
-*    Assign 02, Digital Forensics
+*    Assignment 02, Digital Forensics
 *    Brother Alvey, CS 165
 * Author:
 *    Kaden Payne
