@@ -1,6 +1,6 @@
 /***********************************************************************
 * Program:
-*    Prove 02, Digital Forensics
+*    Assign 02, Digital Forensics
 *    Brother Alvey, CS 165
 * Author:
 *    Kaden Payne
@@ -62,7 +62,7 @@ void readFile(const string fileName)
 
 /**********************************************************************
  * PROMPT TIME
- * prompt user for timestamp
+ * prompt user for 
  ***********************************************************************/
 void promptTime()
 {
