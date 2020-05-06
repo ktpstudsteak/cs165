@@ -1,82 +1,61 @@
 /***********************************************************************
-* Program:
-*    Assignment 02, Digital Forensics
-*    Brother Alvey, CS 165
-* Author:
-*    Kaden Payne
-* Summary: 
-*    This program will take a log and parse it for the correct timestamp.
-*
-*    Estimated:  0.75 hrs   
-*    Actual:     0.20 hrs
-*      
-************************************************************************/
+ * Program:
+ *    Assignment 03, Error Handling
+ *    Brother Alvey, CS 165
+ * Author:
+ *    Kaden Payne
+ * Summary: 
+ *    This program will ask for a number and return it.
+ *
+ *    Estimated:  0.75 hrs   
+ *    Actual:     0.20 hrs
+ *      
+ ************************************************************************/
 
 #include <iostream>
 #include <string>
-#include <fstream>
-
 using namespace std;
 
-struct Record 
-{
-   string username;
-   string fileName;
-   long   timestamp;
-};
-
 /**********************************************************************
- * PROMPT FILE
- * prompt user for log file
+ *PROMPT
+ *prompt user for number and check to see if valid
  ***********************************************************************/
-string promptFile()
-{
-   string fileName;
-   cout << "Enter the access record file: ";
-   cin >> fileName;
+int prompt() {
+  int number;
+  cout << "Enter a number: " << endl;
+  cin >> number;
 
-   return fileName;  
-}
-
-/**********************************************************************
- * READ FILE
- * read in the file provided by the user, store in array of Records
- ***********************************************************************/
-void readFile(const string fileName)
-{
-   ifstream fin(fileName);
-   if (fin.fail())
-   {
-      cout << "File: "
-           << fileName
-           << " was not read properly. Please try again.\n";
-   }
-
-   Record records[] = {};
-
-   //loop into array
   {
-     /* code */
+    try {
+      if (number < 0) {
+
+        throw string("The number cannot be negative.");
+      }
+      if (number > 100) {
+        throw string("The number cannot be greater than 100.");
+
+      }
+      if (number % 2 != 0)
+        throw string("The number cannot be odd.");
+
+      else {
+        cout << "The Number is " << number << "." << endl;
+
+      }
+    } catch (const string message) {
+      cout << "Error: " << message << endl;
+    }
+
   }
+
+  return number;
 }
 
 /**********************************************************************
- * PROMPT TIME
- * prompt user for 
+ *MAIN
+ *this uses the other functions
  ***********************************************************************/
-void promptTime()
-{
-
-}
-
-/**********************************************************************
- * <MAIN DESCRIPTION HERE>
- ***********************************************************************/
-int main()
-{  
-   return 0;
-
-   //array of structs
-   Record records[] = {};
-
+int main() {
+  prompt();
+  return 0;
 }
