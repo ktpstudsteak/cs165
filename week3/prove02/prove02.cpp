@@ -22,7 +22,7 @@ using namespace std;
  ***********************************************************************/
 int prompt() {
   int number;
-  cout << "Enter a number: " << endl;
+  cout << "Enter a number: ";
   cin >> number;
 
   {
@@ -39,7 +39,7 @@ int prompt() {
         throw string("The number cannot be odd.");
 
       else {
-        cout << "The Number is " << number << "." << endl;
+        cout << "The number is " << number << "." << endl;
 
       }
     } catch (const string message) {
