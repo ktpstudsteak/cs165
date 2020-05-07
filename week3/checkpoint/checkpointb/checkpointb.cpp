@@ -28,15 +28,25 @@ void prompt()
      cout << "Enter a number: ";
      cin >> num;
 
-     if (cin.fail())
-     {
-       cout << "Invalid input.\n";
-       cin.clear();
-       cin.ignore(256, '\n');
-     }
-    
      
-   } while (!cin.fail());
+
+      if (cin.fail())
+      {
+         cin.clear();
+        cin.ignore(256, '\n');
+        cout << "Invalid input.\n";
+
+        cout << "Enter a number: ";
+        cin >> num;
+        cout << endl;
+       }
+
+      if (!cin.fail())
+      {
+        break;  
+      }
+    
+   } while (1);
 
   cout << "The number is: "
   << num
