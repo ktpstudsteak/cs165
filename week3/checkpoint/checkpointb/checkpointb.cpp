@@ -1,6 +1,6 @@
 /***********************************************************************
  * Program:
- *    Assignment 03, Error Handling
+ *    Assignment 03b, Error Handling
  *    Brother Alvey, CS 165
  * Author:
  *    Kaden Payne
