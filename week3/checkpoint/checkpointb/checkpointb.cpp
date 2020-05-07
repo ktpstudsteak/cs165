@@ -42,7 +42,7 @@ void prompt()
 
    } while (1);
 
-  cout << "The number is: "
+  cout << "The number is "
   << num
   << ".\n";
  } 
