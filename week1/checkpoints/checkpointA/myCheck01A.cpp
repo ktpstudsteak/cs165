@@ -13,7 +13,7 @@ int main()
     cin  >> fName;
     //cout << endl;
 
-    cout << "What is your age?: ";
+    cout << "Please enter your age: ";
     cin  >> age;
     cout << endl;
     
