@@ -1,8 +1,18 @@
+/***********************************************************************
+* Program:
+*    Checkpoint 01b, basic
+*    Brother Alvey, CS165
+* Author:
+*   Kaden Payne
+* Summary: 
+*    Summaries are not necessary for checkpoint assignments.
+* ***********************************************************************/
+
 #include <iostream>
 using namespace std;
 
 int getSize();
-int getList(int[], int);
+void getList(int[], int);
 void displayMultiples(int[], int);
 
 
@@ -36,7 +46,7 @@ int getSize()
     return size;
 }
 
-int getList(int list[], int size)
+void getList(int list[], int size)
 {
     for (int i = 0; i < size; i++)
     {
