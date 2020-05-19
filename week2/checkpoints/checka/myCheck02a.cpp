@@ -1,6 +1,6 @@
 /***********************************************************************
 * Program:
-*    Week 2, Checkpoint 01 
+*    Checkpoint 02a, Structs 
 *    Brother Alvey, CS 165
 * Author:
 *    Kaden Payne
