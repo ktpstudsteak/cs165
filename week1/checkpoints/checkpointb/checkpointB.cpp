@@ -1,3 +1,13 @@
+/***********************************************************************
+* Program:
+*    Checkpoint 01b, basic
+*    Brother Alvey, CS165
+* Author:
+*   Kaden Payne
+* Summary: 
+*    Summaries are not necessary for checkpoint assignments.
+* ***********************************************************************/
+
 #include <iostream>
 using namespace std;
 
