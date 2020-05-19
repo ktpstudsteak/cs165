@@ -17,6 +17,6 @@ int main()
     cin  >> age;
     cout << endl;
     
-    cout << "Hello " << fName << ". You are " << age << " years old.\n";
+    cout << "Hello " << fName << ", you are " << age << " years old.\n";
 
 }
